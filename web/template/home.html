@@ -1,25 +1,65 @@
 <html>
+
 <head>
-	<script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <!-- Font Awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-	<!-- font awesome from BootstrapCDN -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-	<link href="/public/css/app.css" rel="stylesheet">
-</head>
-<body class="home">
-	<div class="container">
-		<div class="login-page clearfix">
-			<div class="login-box auth0-box before">
-				<img src="https://i.cloudup.com/StzWWrY34s.png" />
-				<h3>Auth0 Example</h3>
-				<p>Zero friction identity infrastructure, built for developers</p>
-				<a id="qsLoginBtn" class="btn btn-primary btn-lg btn-block" href="/login">SignIn</a>
-			</div>
-		</div>
-	</div>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main-navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="http://localhost:3000">
+                <img src="/public/img/logo_notxt.png" border="0">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+            </div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is primary" href="login">
+                        <strong>Login</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <p class="title">Welcome</p>
+            <a class="subtitle">Please login to continue</a>
+        </div>
+    </section>
+    <div class="container">
+        <div class="content is-small">
+            <div class="block">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Auth0 Test App</strong>. This is a test application built for simple authentication testing with
+                Auth0.
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
